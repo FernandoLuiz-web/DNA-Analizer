@@ -24,7 +24,7 @@ class View_Manager:
     def HtmlGenerator(name, input):
         multiplying_operator = 1
         html = name + ".html"
-        html_path = "static/"+html
+        html_path = "static/DNAs/"+html
         output = open(html_path, "w")
         for y in input:
             transparency = input[y] / max(input.values())

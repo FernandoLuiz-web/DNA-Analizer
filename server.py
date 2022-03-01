@@ -9,11 +9,11 @@ except ImportError as ex:
 HOST = 'localhost'
 PORT = int(os.getenv('PORT', 8000))
 
-os.chdir('static')
+os.chdir('static/UI_MainMenu')
 
 httpd = Server((HOST, PORT), Handler)
 try:
-    print(f"Server now running... {HOST}:{PORT}")
+    print(f"Server now running... http://{HOST}:{PORT}")
     print(f"Port: {PORT}")
     print(f"Host: {HOST}")
     httpd.serve_forever()
