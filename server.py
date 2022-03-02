@@ -7,7 +7,7 @@ except ImportError as ex:
     print(f"Error name:{ex.name}")
 
 HOST = 'localhost'
-PORT = int(os.getenv('PORT', 8000))
+PORT = int(os.getenv('PORT', 8080))
 
 os.chdir('static/UI_MainMenu')
 
